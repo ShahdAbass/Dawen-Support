@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>تطبيق دوّن</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="logo.png" rel="icon">
+  <link href="logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Changa:wght@200..800&display=swap" rel="stylesheet">
+ 
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+    
+  
+  <!-- <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=I6aIFZhp-H6_vwN3cddOS5axt1jWLJhYj3wJ-wq2ucv-QkHlyDN5Y-wrxacyvHLs7-K3IHcdwwYRX7pk13xnrw" charset="UTF-8"></script>
+     -->
+    <style>
+        body {
+            font-family: "Changa" , sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        p {
+            text-align: center;
+        }
+
+        .contact-info,
+        .faq,
+        .contact-form {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #bababa;
+            border-radius: 5px;
+            font-family: "Changa" , sans-serif;
+        }
+        .contact-form textarea{
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "Changa" , sans-serif;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        
+    .chating{
+    background-color: #16da47;
+    border-radius: 50px;
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 10%);
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    bottom: 50px;
+    transform: translateY(-50%);
+    }
+    .chat-item{
+    border-radius: 50px;
+    position:static;
+    width: 45px;
+    height: 45px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    margin-bottom: 2px;
+    }
+    i.fa.fa-envelope {
+    font-size: 20px;
+    }
+    .chat-item a{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .chatingo{
+    background-color: #272827;
+    border-radius: 50px;
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 10%);
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    bottom:110px;
+    transform: translateY(-50%);
+    }
+    .chatingo .chat-item{
+    border-radius: 50px;
+    position:static;
+    width: 45px;
+    height: 45px;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    margin-bottom: 2px;
+    }
+    .chatingo i.fa.fa-envelope {
+    font-size: 20px;
+    }
+    .chatingo .chat-item a{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    
+
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>دعم تطبيق دون DAWEN</h1>
+        <div class="contact-info">
+            <h2>معلومات التواصل</h2>
+            <p>إذا كنت بحاجة إلى مساعدة بخصوص تطبيقنا، يمكنك الاتصال بنا على:</p>
+            <p>رقم الهاتف: <a href="tel:+966504490078">966504490078+</a></p>
+        </div>
+        <div class="faq">
+            <h2>الأسئلة الشائعة</h2>
+            <p><strong>س: كيف يمكنني إعادة تعيين كلمة المرور؟</strong><br>ج: انقر على رابط "نسيت كلمة المرور" في صفحة تسجيل الدخول.</p>
+            <!-- Add more FAQs as needed -->
+        </div>
+        <div class="contact-form">
+            <h2>إرسال رسالة</h2>
+            <form action="mailto:sajelha.sa@gmail.com" method="post" enctype="text/plain">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="اسمك" required>
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+                <label for="message">الرسالة</label>
+                <textarea id="message" name="message" placeholder="اكتب رسالتك هنا" rows="4" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+
+        <div class="chatingo">
+            <div class="chat-item">
+                <a href="https://x.com/dawenapp"><i class="bi bi-twitter-x"></i></a>
+            </div>
+         </div>
+
+        <div class="chating">
+            <div class="chat-item">
+            <a href="https://wa.me/966504490078"><i class="bi bi-whatsapp"></i></a>
+            </div>
+         </div>
+
+        
+    </div>
+</body>
+
+</html>
